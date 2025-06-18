@@ -1,0 +1,205 @@
+/* src/components/DeploymentOrder/DeploymentOrder.css */
+.deployment-order {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header-section h2 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.export-btn, .share-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.export-btn:hover, .share-btn:hover {
+  background: #f9fafb;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.plan-summary {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.summary-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.summary-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.deployment-steps {
+  margin-bottom: 2rem;
+}
+
+.deployment-step {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.deployment-step.high {
+  border-left: 4px solid #dc2626;
+  background: #fef2f2;
+}
+
+.deployment-step.medium {
+  border-left: 4px solid #ca8a04;
+  background: #fefce8;
+}
+
+.deployment-step.low {
+  border-left: 4px solid #16a34a;
+  background: #f0fdf4;
+}
+
+
+.step-content {
+  flex: 1;
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.service-name {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+.step-badges {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.impact-badge, .importance-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.impact-badge.high {
+  background: #dc2626;
+  color: white;
+}
+
+.impact-badge.medium {
+  background: #ca8a04;
+  color: white;
+}
+
+.impact-badge.low {
+  background: #16a34a;
+  color: white;
+}
+
+.importance-badge {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.step-reason {
+  margin-bottom: 0.75rem;
+  color: #374151;
+}
+
+.step-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.info-label {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.info-value {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 0.875rem;
+}
+
+.prerequisites {
+  margin-top: 0.5rem;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.prerequisites ul {
+  margin: 0.25rem 0 0 1rem;
+  padding: 0;
+}
+
+.recommendations-section h3 {
+  margin: 0 0 1rem 0;
+  color: #1f2937;
+}
+
+.recommendations-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  
+}
+
+.recommendation-item {
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.no-plan {
+  text-align: center;
+  color: #6b7280;
+  padding: 2rem;
+}
+
+

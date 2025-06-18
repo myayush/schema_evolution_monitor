@@ -1,0 +1,230 @@
+/* src/components/ImpactAnalysis/ImpactAnalysis.css */
+.impact-analysis {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.impact-analysis h2 {
+  margin: 0 0 1rem 0;
+  color: #1f2937;
+}
+
+.impact-summary {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-card {
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+}
+
+.summary-card.high {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.summary-card.low {
+  background: #fefce8;
+  color: #ca8a04;
+}
+
+.summary-card.total {
+  background: #f0f9ff;
+  color: #0284c7;
+}
+
+.summary-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.summary-label {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
+}
+
+.service-card.high {
+  border-left: 4px solid #dc2626;
+}
+
+.service-card.low {
+  border-left: 4px solid #ca8a04;
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.service-name {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+.impact-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.impact-badge.high {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.impact-badge.low {
+  background: #fefce8;
+  color: #ca8a04;
+}
+
+.service-stats {
+  margin-bottom: 1rem;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.stat-value {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.dependencies {
+  margin-bottom: 0.5rem;
+}
+
+.dependencies-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.dependencies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.dependency-tag {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.dependency-more {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.service-details {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.details-header h3 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.close-btn:hover {
+  color: #374151;
+}
+
+.details-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.details-section h4 {
+  margin: 0 0 0.5rem 0;
+  color: #1f2937;
+}
+
+.changes-list {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.change-item {
+  margin-bottom: 0.5rem;
+}
+
+.all-dependencies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.recommendations {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.recommendations li {
+  margin-bottom: 0.25rem;
+}
+
+.no-impact {
+  text-align: center;
+  color: #6b7280;
+  padding: 2rem;
+}
